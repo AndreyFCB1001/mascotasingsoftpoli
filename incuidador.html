@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylec.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Inicio Sesión Cuidadores</title>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            color: #333;
+            font-family: Arial, sans-serif;
+        }
+        #Registros_de_Usuarios {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 50px auto;
+        }
+        #Button {
+            background-color: #38f92d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px 0;
+        }
+        #Button:hover {
+            background-color: #2db52b;
+        }
+        #admin_1 img {
+            border-radius: 10px;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="Registros_de_Usuarios" class="container">
+        <h2 class="text-center">¡Bienvenido!</h2>
+        <p class="text-center">Ingresa los datos requeridos para que seas parte de nuestra comunidad.</p>
+
+        <span id="Label_user_name" class="font-weight-bold">Nombre de Usuario</span>
+        <div class="form-group">
+            <input type="text" class="form-control" id="username" placeholder="Ingrese su nombre de usuario">
+        </div>
+
+        <span id="Label_email" class="font-weight-bold">Correo Electrónico</span>
+        <div class="form-group">
+            <input type="email" class="form-control" id="email" placeholder="Introduce tu correo electrónico">
+        </div>
+
+        <span id="Label_password" class="font-weight-bold">Contraseña</span>
+        <div class="form-group">
+            <input type="password" class="form-control" id="password" placeholder="********">
+        </div>
+
+        <span id="Label_confirm_password" class="font-weight-bold">Confirmar Contraseña</span>
+        <div class="form-group">
+            <input type="password" class="form-control" id="confirm_password" placeholder="********">
+        </div>
+
+        <button data-reaction-hover="1" id="Button" class="btn">Registrar</button>
+        <button data-reaction-hover="2" id="Button_0" class="btn">Iniciar Sesión</button>
+
+        <div class="text-center mt-3">
+            <span>¿Ya tienes una cuenta? </span>
+            <a href="#" class="text-primary">Iniciar sesión en su lugar</a>
+        </div>
+
+        <div id="admin_1" class="text-center mt-4">
+            <img src="https://sibilla-ik8yt6uhsh.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/sibilla-ik8yt6uhsh.figweb.site-245a40cc6392315f5dff1311995ea3ce04a38352/w=1280" alt="Admin" fetchpriority="high" decoding="async">
+            <p class="mt-2">Tendrás un acceso completo a nuestros servicios, podrás ver a los animales que cuidamos y a sus cuidadores.</p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/p

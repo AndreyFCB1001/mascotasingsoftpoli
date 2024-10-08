@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión Administradores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh;
+        }
+        #Registros_de_cuidadores {
+            display: flex;
+            width: 100%;
+            flex: 1;
+        }
+        #ImageColumn {
+            flex: 1;
+            background-image: url('https://sibilla-ik8yt6uhsh.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/sibilla-ik8yt6uhsh.figweb.site-dd01a07af235165976b31129c1c91d00e2d2dcb3/w=1168,f=auto,fit=cover');
+            background-size: cover;
+            background-position: center;
+        }
+        #FormColumn {
+            flex: 1;
+            padding: 20px;
+            background-color: #f9f9f9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; /* Centra el contenido horizontalmente */
+        }
+        #FormContainer {
+            width: 400px; /* Ancho fijo para el formulario */
+            padding: 20px; /* Espaciado interno adicional */
+            border-radius: 8px; /* Bordes redondeados */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para darle profundidad */
+            background-color: white; /* Fondo blanco para el formulario */
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #38f92d;
+        }
+        button {
+            margin: 10px 0;
+            padding: 10px;
+            border: none;
+            background-color: #38f92d;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%; /* Botón ocupa todo el ancho del formulario */
+        }
+        button:hover {
+            background-color: #38f92d;
+        }
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 100%; /* Entrada ocupa todo el ancho del formulario */
+        }
+        label {
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        #Label_de_aviso_ {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        input:focus {
+            border-color: #38f92d; /* Cambia el color del borde al enfocar */
+            outline: none; /* Elimina el contorno predeterminado */
+        }
+    </style>
+</head>
+<body>
+    <div id="Registros_de_cuidadores">
+        <div id="ImageColumn"></div>
+        <div id="FormColumn">
+            <div id="FormContainer">
+                <h1>Inicio de Sesión</h1>
+                <form id="loginForm" onsubmit="return submitForm(event)">
+                    <span id="Label_user_name">Nombre de Usuario</span>
+                    <input type="text" id="Input_user_name" placeholder="Ingrese su nombre de usuario" required>
+                    <span id="Label_password">Contraseña</span>
+                    <input type="password" id="Input_password" placeholder="********" required>
+                    <button type="submit" id="Button_send">Iniciar Sesión</button>
+                    <span id="Label_de_aviso_">¿No tienes una cuenta? <a href="index.html" id="_15_35">Regístrate aquí</a></span>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function submitForm(event) {
+        event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+        const form = document.getElementById("loginForm");
+        // Verifica si el formulario es válido
+        if (form.checkValidity()) {
+            // Redirigir a otra página si el formulario es válido
+            window.location.href = "index-second.html"; // Cambia esto por la URL de la página de destino
+        } else {
+            // Mostrar el mensaje de error si no es válido
+            form.reportValidity();
+        }
+    }
+</script>
+</html>

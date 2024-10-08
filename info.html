@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylee.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Tienda de Mascotas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #38f92d;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header .logo h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #_registro {
+            padding: 20px;
+        }
+
+        #Button {
+            background-color: #38f92d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        #Button:hover {
+            background-color: #2db52b;
+        }
+
+        .section-title {
+            font-size: 24px;
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .section-description {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .card img {
+            border-radius: 15px 15px 0 0;
+            max-height: 200px; /* Ajusta el tamaño de la imagen */
+            object-fit: cover; /* Mantiene la proporción de la imagen */
+        }
+
+        .btn-custom {
+            background-color: #38f92d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            width: 100%; /* Botón de ancho completo */
+        }
+
+        .btn-custom:hover {
+            background-color: #2db52b;
+        }
+
+        .card-wrapper {
+            max-width: 600px; /* Ancho máximo para las tarjetas */
+            margin: 0 auto; /* Centrar las tarjetas */
+        }
+                   /* Estilo del Footer */
+#footer {
+  background-color: #38f92d; /* Color de fondo verde con opacidad */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  margin-bottom: 15px;
+}
+
+.footer-content h3 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.footer-content p {
+  font-size: 16px;
+  margin: 5px 0;
+}
+
+.socials {
+  list-style: none;
+  padding: 0;
+}
+
+.socials li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.socials a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #ffcc00; /* Color dorado al pasar el cursor */
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  padding-top: 10px;
+  font-size: 14px;
+  background-color: #421f71;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+}  
+
+.logo{color:#181818; font-weight: bold;}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Tienda de Mascotas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="info.html">Historia clínica</a></li>
+                <li><a href="friend.html">Amigo peludo</a></li>
+                <li><a href="registrom.html">Servicios adicionales</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <div class="card-wrapper">
+            <div class="card">
+                <div class="card-body">
+                    <span class="section-title">HISTORIA CLÍNICA</span>
+                </div>
+                <img src="https://sibilla-ik8yt6uhsh.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/sibilla-ik8yt6uhsh.figweb.site-b57fdff33c01dfbf4b75155a0701c411909929d5/w=1066" alt="Historia 1" class="img-fluid">
+                <div class="card-body">
+                    <span class="section-description">Resumen de la historia clínica</span>
+                  
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <span class="section-title">GESTIÓN DE MEDICAMENTOS</span>
+                </div>
+                <img src="https://sibilla-ik8yt6uhsh.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/sibilla-ik8yt6uhsh.figweb.site-0d58a9702407197e65e9511b1569e3aa6365f335/w=1148" alt="Medicamentos 1" class="img-fluid">
+                <div class="card-body">
+                    <span class="section-description">Se indicarán dosis, frecuencia y duración del tratamiento</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <span class="section-title">POSIBLES TRATAMIENTOS</span>
+                </div>
+                <img src="https://sibilla-ik8yt6uhsh.figweb.site/cdn-cgi/imagedelivery/s-dfVpmPR-aKHmwFNwAgnQ/sibilla-ik8yt6uhsh.figweb.site-a3f91c2ff4c166027a6238ea77acbbfbc3016af3/w=896" alt="Perro 1" class="img-fluid">
+                <div class="card-body">
+                    <span class="section-description">Se mostrará un resumen de las posibles alergias o interacciones de medicamentos</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+      <div class="footer-content">
+          <h3>Tienda de Mascotas</h3>
+          <p>Tu lugar para encontrar todo lo que necesitas para tus amigos peludos.</p>
+          <ul class="socials">
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">Twitter</a></li>
+              <li><a href="#">Instagram</a></li>
+          </ul>
+      </div>
+</footer>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Tienda de Mascotas. Todos los derechos reservados.</p>
+      </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

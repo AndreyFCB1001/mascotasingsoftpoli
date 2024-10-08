@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="/style.css" rel="stylesheet">
+    <link href="/style-template.css" rel="stylesheet">
+
+    <title>Tienda de Mascotas</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background: #38f92d;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header .logo h1 {
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #hero {
+            position: relative;
+            background: url('img/fondo principal.jpg') no-repeat center center;
+            background-size: cover;
+            padding: 100px 0;
+            text-align: center;
+            color: white;
+        }
+
+        #hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.6); /* Capa semi-transparente */
+            z-index: 1;
+        }
+
+        #hero h2, #hero p, #hero button {
+            position: relative;
+            z-index: 2; /* Coloca el contenido por encima de la capa semi-transparente */
+        }
+
+        footer {
+            background-color: #421f71;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-content h3 {
+            margin: 0;
+        }
+
+        .footer-content p {
+            margin: 5px 0;
+        }
+
+        .footer-bottom {
+            background-color: #421f71;
+            color: white;
+            padding: 2rem;
+        }
+
+        /* Estilos del loader */
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+        }
+
+        .spinner {
+            border: 8px solid #f3f3f3;
+            border-top: 8px solid #38f92d;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Tienda de Mascotas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="info.html">Historia clínica</a></li>
+                <li><a href="friend.html">Amigo peludo</a></li>
+                <li><a href="registrom.html">Generar Reportes</a></li>
+                <li><a href="about.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" style="background: url('img/fondo principal.jpg') no-repeat center center; background-size: cover; padding: 100px 0; text-align: center; position: relative;">
+            <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.1); z-index: 1;"></div>
+            <h2 style="font-size: 42px; font-weight: 600; color: #ffffff; margin-bottom: 20px; position: relative; z-index: 2;">Bienvenido a la Mejor Tienda de Mascotas</h2>
+            <p style="font-size: 24px; color: #ffffff; margin-bottom: 40px; position: relative; z-index: 2;">Todo lo que necesitas para cuidar y consentir a tu mascota.</p>
+            <button id="btn-explorar" style="background-color: #38f92d; color: white; font-size: 20px; padding: 15px 30px; border: none; border-radius: 50px; cursor: pointer; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); position: relative; z-index: 2; transition: background-color 0.3s ease;">Explorar Productos</button>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-content">
+            <h3>Tienda de Mascotas</h3>
+            <p>Tu lugar para encontrar todo lo que necesitas para tus amigos peludos.</p>
+        </div>
+    </footer>
+
+      <!-- Inicio de sección 'Sobre nosotros' -->
+      <div class="container py-5">
+        <div class="row py-5">
+            <div class="col-lg-7 pb-5 pb-lg-0 px-3 px-lg-5">
+                <h4 class="text-secondary mb-3">Sobre Nosotros</h4>
+                <h1 class="display-4 mb-4"><span class="text-primary">Alojamiento</span> & <span class="text-secondary">Guardería</span></h1>
+                <h5 class="text-muted mb-3">Nos dedicamos al cuidado integral de tu mascota. Contamos con un equipo profesional y dedicado, siempre dispuesto a brindar el mejor servicio.</h5>
+                <p class="mb-4">En Tienda de Mascotas ofrecemos una amplia gama de servicios para asegurar el bienestar y felicidad de tus amigos peludos. Nuestro equipo está formado por profesionales altamente capacitados que brindan atención personalizada a cada mascota.</p>
+                <ul class="list-inline">
+                    <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>Líderes en la industria</h5></li>
+                    <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>Servicios de emergencia</h5></li>
+                    <li><h5><i class="fa fa-check-double text-secondary mr-3"></i>Atención al cliente 24/7</h5></li>
+                </ul>
+                <a href="#" class="btn btn-lg btn-primary mt-3 px-4">Saber más</a>
+            </div>
+            <div class="col-lg-5">
+                <div class="row px-3">
+                    <div class="col-12 p-0">
+                        <img class="img-fluid w-100" src="img/about-1.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img class="img-fluid w-100" src="img/about-2.jpg" alt="">
+                    </div>
+                    <div class="col-6 p-0">
+                        <img class="img-fluid w-100" src="img/about-3.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fin de sección 'Sobre nosotros' -->
+
+    <div class="footer-bottom" style="text-align:center">
+        <p>&copy; 2024 Tienda de Mascotas. Todos los derechos reservados.</p>
+    </div>
+
+    <script>
+        window.onload = function () {
+            setTimeout(function () {
+                document.getElementById('loader').style.display = 'none';
+                document.getElementById('content').style.display = 'block'; 
+            }, 3000);
+        };
+    </script>
+</body>
+</html>
